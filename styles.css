@@ -214,7 +214,7 @@ h3.defiler {
     justify-content: space-around;
     align-items: center;
     padding: 2rem 0;
-    background-image: url('/img/driving.png');
+    background-image: url('./img/driving.png');
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -512,7 +512,7 @@ h3.defiler {
 
 /* Extra Offer Section */
 .extra-offer {
-    background-image: url('/img/fille-auto.png');
+    background-image: url('./img/fille-auto.png');
     background-size: cover;
     background-position: center;
     height: 400px;

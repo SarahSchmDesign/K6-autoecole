@@ -282,37 +282,7 @@ h3.defiler {
     }
 }
 
-/* ====== WATERMARK BACKGROUND ====== */
-.watermark {
-    position: absolute;
-    top: 70vh;
-    left: 85vw;
-    width: 120px;
-    height: auto;
-    opacity: 0.8;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-}
 
-.mobile-text {
-    display: none;
-}
-
-@media (max-width:565px) {
-
-    .watermark {
-        display: none;
-    }
-
-
-    .desktop-text {
-        display: none;
-    }
-
-    .mobile-text {
-        display: inline;
-    }
-}
 
 /* Buttons */
 .btn {
@@ -372,6 +342,7 @@ h3.defiler {
     flex-direction: column;
     gap: 1.5rem;
     margin-top: 2rem;
+    position: relative;
 }
 
 .offer-card {
@@ -403,6 +374,49 @@ h3.defiler {
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 1rem;
+}
+
+/* ====== WATERMARK BACKGROUND ====== */
+.watermark {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    width: 120px;
+    height: auto;
+    opacity: 0.8;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.mobile-text {
+    display: none;
+}
+
+@media (max-width:767px) {
+
+    .watermark {
+        top: 80%;
+        left: 50%;
+    }
+
+
+
+}
+
+@media (max-width:565px) {
+
+    .watermark {
+        display: none;
+    }
+
+
+    .desktop-text {
+        display: none;
+    }
+
+    .mobile-text {
+        display: inline;
+    }
 }
 
 /* ====== BOTTOM FEATURES WITH STARS ====== */

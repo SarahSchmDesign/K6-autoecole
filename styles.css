@@ -41,7 +41,6 @@
 
 html,
 body {
-    overflow-x: hidden;
     max-width: 100vw;
 }
 
@@ -50,7 +49,6 @@ html {
 }
 
 body {
-
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     font-family: var(--base-font), var(--fallback-fonts);
@@ -58,7 +56,11 @@ body {
     background-color: var(--color-primary);
 }
 
+.mentions {
 
+    margin: 0 auto;
+    padding: 0 2rem;
+}
 
 /* Nav Section*/
 .logo img {
@@ -522,6 +524,7 @@ h3.defiler {
     flex-direction: column;
     justify-content: center;
     position: relative;
+    overflow-x: clip;
 }
 
 .offer-box {
@@ -578,10 +581,10 @@ h3.defiler {
 .road-svg {
     position: absolute;
     width: 200px;
-    /* Adjust to fit the design */
     height: 100px;
     z-index: 1;
-    /* Make sure it’s below the text */
+    overflow: hidden;
+    max-width: 100%;
 }
 
 

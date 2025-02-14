@@ -285,8 +285,8 @@ h3.defiler {
 /* ====== WATERMARK BACKGROUND ====== */
 .watermark {
     position: absolute;
-    top: 61%;
-    left: 90%;
+    top: 70vh;
+    left: 85vw;
     width: 120px;
     height: auto;
     opacity: 0.8;
@@ -443,6 +443,14 @@ h3.defiler {
 
 
 /* ====== RESPONSIVE DESIGN ====== */
+@media (min-width: 968px) {
+    .offers-section {
+
+        max-width: 70%;
+        margin: 0 auto;
+    }
+}
+
 @media (min-width: 368px) {
     .offers-container {
         flex-direction: row;
@@ -689,7 +697,7 @@ h3.defiler {
 
 /* ====== FOOTER SECTION ====== */
 .footer {
-    background-color: #E4002B;
+    background-color: var(--color-accent);
     padding: 1.5rem;
     text-align: center;
     margin-top: 3rem;
